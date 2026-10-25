@@ -1,4 +1,4 @@
-# Assignment #5 — JavaScript Basics (DOM Manipulation & Events)**
+# Assignment #5 — JavaScript Basics (DOM Manipulation & Events)
 
 Amirgaliyeva Saida  
 IT-2513
