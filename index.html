@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--main header-->
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">MyProfile.</a>
+            <nav>
+                <a href="#profile">Profile</a>
+                <a href="#edit">Edit Profile</a>
+                <a href="#hobbies">Hobbies</a>
+            </nav>
+        </div>
+    </header>
+
+    <!--main all-->
+    <main class="container main-content">
+        <section id="profile" class="section">
+            <div class="section-heading">
+                <span class="section-label">ABOUT ME</span>
+                <h2>Personal Information</h2>
+                <p>Get to know me a little better.</p>
+            </div>
+
+            <!--profile card-->
+            <div class="profile-card">
+                <div class="profile-top">
+                    <div class="avatar" id="avatar">A</div>
+                    <div>
+                        <h3 id="profileName">Anna</h3>
+                        <p>Personal Profile</p>
+                    </div>
+                </div>
+                
+                <div class="profile-details">
+                    <div class="detail-box">
+                        <span class="detail-label">Birth Year</span>
+                        <strong id="profileYear">2007</strong>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Age</span>
+                        <strong id="profileAge">19</strong>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Developer</span>
+                        <strong id="profileDeveloper">No</strong>
+                    </div>
+                    <div class="detail-box">
+                        <span class="detail-label">Total Hobbies</span>
+                        <strong id="profileHobbies">3</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--edit profile-->
+        <section id="edit" class="section">
+            <div class="section-heading">
+                <span class="section-label">PERSONAL DETAILS</span>
+                <h2>Update Your Profile</h2>
+                <p>Change your information whenever you want.</p>
+            </div>
+
+            <div class="form-card">
+                <form id="profileForm">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Enter your name"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthYear">Birth Year</label>
+                        <input
+                            type="number"
+                            id="birthYear"
+                            placeholder="Enter your birth year"
+                            min="1900"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label>Are you a developer?</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="developer" value="true">
+                                Yes
+                            </label>
+                            <label>
+                                <input type="radio" name="developer" value="false" checked>
+                                No
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Create / Update Profile
+                    </button>
+                    <p id="profileMessage" class="success-message"></p>
+                </form>
+            </div>
+        </section>
+
+
+        <!--hobbies-->
+        <section id="hobbies" class="section">
+            <div class="section-heading">
+                <span class="section-label">MY INTERESTS</span>
+                <h2>My Hobbies</h2>
+                <p>Things I enjoy doing in my free time.</p>
+            </div>
+
+            <div class="hobbies-card">
+                <ul id="hobbyList" class="hobby-list"></ul>
+                
+                <div class="form-group">
+                    <label for="newHobby">Add a New Hobby</label>
+                    <input
+                        type="text"
+                        id="newHobby"
+                        placeholder="e.g. Photography">
+                </div>
+
+                <div class="button-group">
+                    <button type="button" id="addBtn" class="btn btn-primary">
+                        + Add Item
+                    </button>
+                    <button type="button" id="removeBtn" class="btn btn-outline">
+                        Remove Last Item
+                    </button>
+                </div>
+
+                <p id="hobbyMessage" class="success-message"></p>
+            </div>
+        </section>
+    </main>
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container footer-content">
+            <span class="footer-logo">MyProfile.</span>
+            <p>Made with HTML, CSS & JavaScript</p>
+            <p>&copy; 2026 My Personal Profile</p>
+        </div>
+    </footer>
+
+
+    <!--javaa-->
+    <script src="script.js"></script>
+</body>
+</html>
